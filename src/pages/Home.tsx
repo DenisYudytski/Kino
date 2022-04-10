@@ -10,7 +10,7 @@ import { addFilms, fetchTopFilms } from '../store/reducers/ActionCreators'
 
 export const Home: FC = () => {
 	return (
-		<div>
+		<div className='home'>
 			САЛАМ
 		</div>
 	)

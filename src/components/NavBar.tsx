@@ -31,7 +31,11 @@ export const NavBar: FC = () => {
 		dispatch(setCurrentPage('genres'))
 		navigate('/genres')
 		value.setValue('')
-
+	}
+	const toHome = () => {
+		dispatch(setCurrentPage('home'))
+		navigate('/')
+		value.setValue('')
 	}
 
 	useEffect(() => {
@@ -58,11 +62,10 @@ export const NavBar: FC = () => {
 						onMouseOver={overBurger}
 						onMouseOut={outBurger}
 						visible={visible}
-						setVisible={setVisible}
 					/>
-					<div>
+					<MyButton onClick={toHome}>
 						КиНо ЕпТа
-					</div>
+					</MyButton>
 				</div>
 				<MyButton
 					type={page === 'collection' ? 'active' : 'primary'}

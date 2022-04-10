@@ -46,6 +46,9 @@ const topFilmSlice = createSlice({
 		addFilmsForPage(state, action: PayloadAction<IFilm[]>) {
 			state.films = [...state.films, ...action.payload]
 		},
+		// addGenresFilmsForPage(state, action: PayloadAction<IFilteredFilm>) {
+		// 	state.filteredFilms = [state.filteredFilms, action.payload]
+		// },
 		filterFetch(state) {
 			state.isPending = true
 		},

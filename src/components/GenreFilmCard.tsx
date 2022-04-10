@@ -1,24 +1,21 @@
-import React, { FC, useEffect } from 'react'
+import React, { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useAppDispatch } from '../hooks/redux'
-import { IFilm } from '../models/IFilm'
-import { fetchStaff } from '../store/reducers/ActionCreators'
-import { getFilmRate } from '../utils'
+import { IFilmFromId } from '../models/IFilm'
+import { getFilmRate, getGenreFilmRate } from '../utils'
 import { FilmRating } from './FilmRating'
 import { Genre } from './Genre'
 import List from './List'
 
-interface FilmCardProps {
-	film: IFilm
+interface GenreFilmCardProps {
+	film: IFilmFromId
 }
 
-export const FilmCard: FC<FilmCardProps> = ({ film }) => {
-	const rate = getFilmRate(film, 4, 7)
+
+export const GenreFilmCard: FC<GenreFilmCardProps> = ({ film }) => {
+	const rate = getGenreFilmRate(film, 4, 7)
 	const navigate = useNavigate()
-
-
 	const handler = () => {
-		navigate(`/${film.filmId}`)
+		navigate(`/${film.kinopoiskId}`)
 	}
 	return (
 		<div onClick={handler} className='filmCard'>

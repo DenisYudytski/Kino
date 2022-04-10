@@ -12,6 +12,7 @@
 @import 'AgeLimit.scss';
 @import 'OutLink.scss';
 @import 'Burger.scss';
+@import 'GenreCard.scss';
 
 body {
 	background: rgb(58, 55, 55);
@@ -23,7 +24,10 @@ body {
 	max-width: 2048px;
 	margin: 0 auto;
 
-	.home {
-		// text-align: center;
+	.title {
+		text-transform: capitalize;
+		margin-left: 100px;
+		margin-bottom: 20px;
+		font-size: 24px;
 	}
 }

@@ -7,17 +7,14 @@ interface BurgerProps {
 	onMouseOver: () => void
 	onMouseOut: () => void
 	visible: boolean
-	setVisible: (arg: boolean) => void
+
 }
 
-export const Burger: FC<BurgerProps> = ({ onMouseOver, onMouseOut, visible, setVisible }) => {
+export const Burger: FC<BurgerProps> = ({ onMouseOver, onMouseOut, visible }) => {
 
 	const navigate = useNavigate()
 
-	const goHome = () => {
-		setVisible(false)
-		navigate('/')
-	}
+
 	return (
 		<div className='menu'>
 			<div
@@ -34,9 +31,6 @@ export const Burger: FC<BurgerProps> = ({ onMouseOver, onMouseOut, visible, setV
 				onMouseOver={onMouseOver}
 				className={!visible ? 'menu-content' : 'menu-content__active'}
 			>
-				<MyButton onClick={goHome}>
-					Главная
-				</MyButton>
 			</div>
 
 		</div>

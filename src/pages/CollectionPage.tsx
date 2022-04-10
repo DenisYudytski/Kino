@@ -63,7 +63,7 @@ export const CollectionPage: FC = () => {
 
 
 	return (
-		<div className='home'>
+		<div className='collection'>
 			<CollectionNavBar />
 			{isLoading &&
 				<Loader />

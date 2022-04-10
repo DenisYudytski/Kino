@@ -2,7 +2,7 @@ import { IFilm } from "../models/IFilm"
 
 
 export interface IRate {
-	rate: string
+	rate: string | number
 	bad: boolean
 	good: boolean
 	great: boolean
