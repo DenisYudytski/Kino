@@ -1,0 +1,19 @@
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	font-size: 26px;
+
+	.leftBar {
+		display: flex;
+		align-items: center;
+
+		.logo {
+			margin-right: 40px;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+}

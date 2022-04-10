@@ -1,0 +1,6 @@
+export const API_KEY = '8c8e1a50-6322-4135-8875-5d40a5420d86'
+export const API_URL_TOP100 = 'TOP_100_POPULAR_FILMS'
+export const API_URL_TOP250 = ' TOP_250_BEST_FILMS'
+export const API_URL_TOP_AWAIT = ' TOP_AWAIT_FILMS'
+export const API_URL_KEYWORD = 'https://kinopoiskapiunofficial.tech/api/v2.2/films?order=RATING&type=ALL&ratingFrom=0&ratingTo=10&yearFrom=1000&yearTo=3000&keyword='
+export const API_URL_ID = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/'

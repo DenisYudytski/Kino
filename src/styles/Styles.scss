@@ -1,0 +1,29 @@
+@import 'null.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'FilmCard.scss';
+@import 'FilmList.scss';
+@import 'NavBar.scss';
+@import 'CollectionNavbar.scss';
+@import 'input.scss';
+@import 'MyButton.scss';
+@import 'Loader.scss';
+@import 'FilteredFilms.scss';
+@import 'Film.scss';
+@import 'AgeLimit.scss';
+@import 'OutLink.scss';
+@import 'Burger.scss';
+
+body {
+	background: rgb(58, 55, 55);
+	color: white;
+	font-family: Roboto;
+}
+
+.App {
+	max-width: 2048px;
+	margin: 0 auto;
+
+	.home {
+		// text-align: center;
+	}
+}

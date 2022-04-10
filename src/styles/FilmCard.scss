@@ -1,0 +1,59 @@
+.filmCard {
+	display: flex;
+	flex-direction: column;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	max-width: 300px;
+	position: relative;
+	cursor: pointer;
+	transition: 0.35s ease transform;
+
+	&:hover {
+		transform: scale(1.05);
+		transition: 0.35s ease transform;
+	}
+
+	&-image {
+		margin-bottom: 15px;
+
+
+
+	}
+
+	&-rating {
+		background: rgb(58, 55, 55);
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.bad {
+		border: 2px solid red;
+	}
+
+	.good {
+		border: 2px solid orange;
+	}
+
+	.great {
+		border: 2px solid green;
+	}
+
+	.genre {
+		margin-top: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		color: yellow;
+
+		&-item:not(:last-child) {
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.outLink {
+	display: inline-block;
+	color: rgb(58, 55, 55);
+	background: white;
+	padding: 5px;
+	border-radius: 15px;
+	transition: all 0.3s ease;
+
+	&:visited {
+		color: rgb(58, 55, 55);
+	}
+
+	&:hover {
+		color: white;
+		background: rgb(255, 102, 0);
+		transition: all 0.3s ease;
+	}
+}

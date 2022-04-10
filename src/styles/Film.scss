@@ -1,0 +1,40 @@
+.film {
+	background: rgb(70, 66, 66);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+
+	&-body {
+		margin-left: 20px;
+
+		&__title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		&__originalTitle {
+			align-items: center;
+			display: flex;
+			opacity: 0.8;
+			margin-bottom: 10px;
+		}
+
+		&__shortDescription {
+			margin-bottom: 20px;
+		}
+
+		.FilmDescription {
+			margin-top: 30px;
+
+			&-item:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			&__tag {
+				opacity: 0.5;
+			}
+		}
+	}
+}
